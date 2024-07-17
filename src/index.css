@@ -39,22 +39,34 @@
   }
 }
 .logo {
-  @apply text-6xl text-sec mb-6 font-['Rema'];
+  @apply text-6xl text-brighter mb-6 font-['Rema'];
 }
 .icon {
-  @apply w-14 h-14 bg-gre rounded-full flex justify-center items-center;
+  @apply w-14 h-14 bg-brighter rounded-full flex justify-center items-center;
   img {
     @apply block w-1/2 h-1/2;
   }
 }
 .dashboard {
-  @apply w-max flex flex-col flex-1;
+  @apply w-max flex flex-col flex-1 overflow-hidden;
 }
 .dashContainer {
   @apply flex flex-1;
 }
 .transactions-table {
-  @apply flex flex-1 flex-col;
+  @apply flex flex-1 flex-col min-w-fit;
+  .rowsCont {
+    overflow-y: scroll;
+    direction: rtl;
+    max-height: 50%;
+  }
+}
+.tableRow {
+  @apply mt-4 ms-4 me-4 flex items-center justify-between text-white;
+  direction: ltr;
+  span {
+    @apply font-[CairoM];
+  }
 }
 
 /*

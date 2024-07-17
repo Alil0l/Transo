@@ -2,14 +2,16 @@ import React from "react";
 
 export default function Filter() {
   return (
-    <div className="filter mt-2 me-4">
+    <div className="filter mt-2 mb-2 me-4">
       <form className="flex justify-between">
         <div className="flex gap-2">
-          <button className="btn  bg-brighter btn-sm font-[CairoL]">All</button>
-          <button className="btn  bg-brighter btn-sm font-[CairoL]">
+          <button className="btn  bg-brighter btn-sm font-[CairoL] font-light">
+            All
+          </button>
+          <button className="btn  bg-brighter btn-sm font-[CairoL] font-light">
             Alphabit
           </button>
-          <button className="btn   bg-brighter btn-sm font-[CairoL]">
+          <button className="btn   bg-brighter btn-sm font-[CairoL] font-light">
             Amount
           </button>
         </div>
