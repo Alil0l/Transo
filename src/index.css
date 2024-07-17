@@ -3,3 +3,91 @@
 @tailwind utilities;
 
 @import "daisyui";
+
+/* Custom styles */
+
+@layer base {
+  @font-face {
+    font-family: "CairoB";
+    src: url("./assets/fonts/Cairo-Black.ttf");
+  }
+  @font-face {
+    font-family: "CairoL";
+    src: url("./assets/fonts/Cairo-Light.ttf");
+  }
+  @font-face {
+    font-family: "CairoM";
+    src: url("./assets/fonts/Cairo-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Rema";
+    src: url("./assets/fonts/Remachine.ttf");
+  }
+}
+
+.app {
+  @apply flex w-full h-screen justify-center items-center bg-fixed bg-cover bg-[url("../src/assets/images/background.jpg")];
+
+  .appContainer {
+    @apply flex w-4/5 h-4/5 p-4 bg-sec rounded-3xl;
+  }
+}
+.sidebar {
+  @apply h-full w-[150px] ps-4 pe-4 rounded-l-3xl justify-center items-center flex flex-col;
+  .sidebar-content {
+    @apply pb-8 pt-8 bg-main h-full w-full rounded-2xl flex flex-col items-center justify-between;
+  }
+}
+.logo {
+  @apply text-6xl text-sec mb-6 font-['Rema'];
+}
+.icon {
+  @apply w-14 h-14 bg-gre rounded-full flex justify-center items-center;
+  img {
+    @apply block w-1/2 h-1/2;
+  }
+}
+.dashboard {
+  @apply w-max flex flex-col flex-1;
+}
+.dashContainer {
+  @apply flex flex-1;
+}
+.transactions-table {
+  @apply flex flex-1 flex-col;
+}
+
+/*
+.dashboard {
+  @apply w-3/4 flex flex-col gap-4 rounded-r-3xl bg-white p-4;
+}
+
+.personal-info {
+  @apply p-4 bg-blue-100 rounded-2xl;
+}
+
+.dashContainer {
+  @apply flex  h-2/3 w-full gap-4;
+}
+
+.chartAndCard {
+  @apply flex flex-col flex-1 gap-4;
+}
+
+.transactions-table {
+  @apply p-4 bg-green-100 flex-[2] rounded-2xl;
+}
+
+.chart {
+  @apply p-4 bg-yellow-100 flex-[2] rounded-2xl;
+}
+
+.total-transactions-card {
+  @apply p-4 bg-red-100 flex-1 rounded-2xl flex flex-col justify-evenly items-center;
+}
+.total-transactions-card div {
+  @apply w-full flex justify-evenly items-center;
+  span {
+    @apply text-5xl text-slate-950;
+  }
+} */
