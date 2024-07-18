@@ -16,8 +16,12 @@ export default function PersonalInfo() {
           <h2 className="font-[CairoM]">{n.toUTCString()}</h2>
         </div>
       </div>
-      <div className="adv w-max rounded-2xl min-w-12 min-h-12 bg-gre flex-1 h-full">
-        <img src="" alt="" />
+      <div className="adv rounded-2xl min-w-12 min-h-12 flex-1 h-fit overflow-hidden">
+        <img
+          className="w-full h-auto max-h-40 object-cover "
+          src="./src/assets/images/cashback.png"
+          alt="30%cashback"
+        />
       </div>
     </div>
   );
