@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteUser from "@/assets/images/DeleteUser.png";
 
 export default function TableRow({
   transactions,
@@ -19,11 +20,7 @@ export default function TableRow({
               onClick={() => handleDelete(transaction.id)}
               className="btn btn-sm bg-red-600 hover:bg-red-800 text-white"
             >
-              <img
-                className="h-3/5"
-                src="./src/assets/images/DeleteUser.png"
-                alt="delete user"
-              />
+              <img className="h-3/5" src={DeleteUser} alt="delete user" />
             </button>
           </div>
         );

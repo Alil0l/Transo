@@ -1,4 +1,7 @@
 import React from "react";
+import home from "@/assets/images/Home.png";
+import addUser from "@/assets/images/AddUser.png";
+import logOut from "@/assets/images/logout.png";
 
 export default function Sidebar() {
   return (
@@ -7,10 +10,10 @@ export default function Sidebar() {
         {/* LOGO */}
         <div className="flex flex-col gap-4 items-center">
           <Logo />
-          <Icon link="#" src="./src/assets/images/Home.png" alt="img" />
-          <Icon link="#" src="./src/assets/images/AddUser.png" alt="img" />
+          <Icon link="#" src={home} alt="img" />
+          <Icon link="#" src={addUser} alt="img" />
         </div>
-        <Icon link="#" src="./src/assets/images/logout.png" alt="img" />
+        <Icon link="#" src={logOut} alt="img" />
         {/* Exit Icon  */}
       </div>
     </div>
