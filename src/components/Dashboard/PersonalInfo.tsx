@@ -5,7 +5,7 @@ import cashBack from "@/assets/images/cashback.png";
 export default function PersonalInfo() {
   const n = new Date();
   return (
-    <div className="flex gap-4 mt-2 mb-2 flex-1">
+    <div className="flex flex-col lg:flex-row sm:flex-col gap-4 mt-2 mb-2 flex-1">
       <div className="msg flex flex-col gap-4 justify-center items-start">
         <div className="flex gap-4 items-center">
           <div className="msgimg bg-gre w-10 rounded-full">

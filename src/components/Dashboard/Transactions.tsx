@@ -106,7 +106,11 @@ export default function Transactions() {
 
   // Adding loader to wait for the data.
   if (!data) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex justify-center items-center w-full h-full">
+        <div className="spinner"></div>
+      </div>
+    );
   }
   4;
   // passing the data
