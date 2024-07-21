@@ -8,7 +8,7 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="sidebar-content">
         {/* LOGO */}
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex lg:flex-col flex-row lg:gap-4 gap-8 items-center">
           <Logo />
           <Icon link="#" src={home} alt="img" />
           <Icon link="#" src={addUser} alt="img" />
