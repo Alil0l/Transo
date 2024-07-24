@@ -1,7 +1,4 @@
 
-![image](https://github.com/user-attachments/assets/63d46972-f6fb-4278-ba6d-845ea53bac24)
-
-
 # TRANSO!
 ## Simple Dashbored made with React, TS and Tailwind.
 ### Landing
